@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    background-color: #F3F4F6;
+    color: #1E293B;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+}
+
+/* Font Size Accessibility Classes */
+.font-size-sm {
+  font-size: 11px !important;
+}
+.font-size-base {
+  font-size: 13px !important;
+}
+.font-size-lg {
+  font-size: 15px !important;
+}
+
+/* Strict GIGW 3.0 Utilitarian Styling */
+.table-nic {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-nic th {
+  background-color: #F1F5F9;
+  color: #0F172A;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  border: 1px solid #CBD5E1;
+  padding: 6px 10px;
+}
+
+.table-nic td {
+  border: 1px solid #CBD5E1;
+  padding: 6px 10px;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+.table-nic tr:nth-child(even) {
+  background-color: #F8FAFC;
+}
+
+.table-nic tr:hover {
+  background-color: #EDF2F7;
+}
+
+.btn-nic {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-nic-primary {
+  background-color: #1D0A69;
+  color: #FFFFFF;
+  border-color: #14064a;
+}
+.btn-nic-primary:hover {
+  background-color: #2b1192;
+}
+
+.btn-nic-success {
+  background-color: #138808;
+  color: #FFFFFF;
+  border-color: #0f6a06;
+}
+.btn-nic-success:hover {
+  background-color: #18a30a;
+}
+
+.btn-nic-warning {
+  background-color: #D97706;
+  color: #FFFFFF;
+  border-color: #B45309;
+}
+.btn-nic-warning:hover {
+  background-color: #F59E0B;
+}
+
+.btn-nic-danger {
+  background-color: #DC2626;
+  color: #FFFFFF;
+  border-color: #B91C1C;
+}
+.btn-nic-danger:hover {
+  background-color: #EF4444;
+}
+
+.btn-nic-outline {
+  background-color: #FFFFFF;
+  color: #1D0A69;
+  border-color: #1D0A69;
+}
+.btn-nic-outline:hover {
+  background-color: #EEF2FF;
+}
+
+.badge-nic {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 2px;
+  border-width: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.badge-approved { background-color: #DCFCE7; color: #166534; border-color: #86EFAC; }
+.badge-pending { background-color: #FEF9C3; color: #854D0E; border-color: #FDE047; }
+.badge-flagged { background-color: #FEE2E2; color: #991B1B; border-color: #FCA5A5; }
+.badge-ai-high { background-color: #ECFDF5; color: #047857; border-color: #A7F3D0; }
+
+/* Custom scrollbar for dense administrative tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #94A3B8;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748B;
+}
